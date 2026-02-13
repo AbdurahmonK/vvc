@@ -243,9 +243,32 @@ virtual-vc/
 
 ## 🎥 Demo Video
 
-![Demo Recording](./public/demo/screen-recording.webp)
+> **Note**: Due to file size limitations, the demo video is not included in the repository.
 
-### Demo Coverage
-1. **Happy Path**: Start → Greeting → Listening state with mic visualizer
-2. **Video Transitions**: Smooth cross-fade between different states
-3. **UI Elements**: Dark theme, glassmorphism effects, status indicators
+### Creating Your Own Demo
+To create a demo video showing the application:
+
+1. **Start the development server**:
+   ```bash
+   npm run dev
+   ```
+
+2. **Use a screen recording tool**:
+   - **macOS**: QuickTime Player (Cmd+Shift+5) or Screenshot app
+   - **Windows**: Xbox Game Bar (Win+G)
+   - **Cross-platform**: OBS Studio
+
+3. **Record the following flow** (1-2 minutes):
+   - Show idle state with "Start Chat" button
+   - Click "Start Chat" to trigger greeting
+   - Wait for LISTENING state with microphone visualizer
+   - Demonstrate speech recognition (say "hello" or "weather")
+   - Show response video playing
+   - Say "goodbye" to end conversation
+
+### Alternative: Live Demo
+You can also deploy the app to see it live:
+- **Netlify**: `npm run build` then drag `dist` folder to [Netlify Drop](https://app.netlify.com/drop)
+- **Vercel**: Connect your GitHub repo for automatic deployment
+
+Or visit the live demo at: https://virtual-vc.netlify.app/
